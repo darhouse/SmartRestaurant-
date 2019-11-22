@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/progres_bar_register"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".CreateNewAccountActivity">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy Order"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="4dp"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/app_logo" />
+
+        <EditText
+            android:id="@+id/edit_text_first_name"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_create_black"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="16dp"
+            android:hint="First Name"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/edit_text_last_name"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_create_black"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="16dp"
+            android:hint="Last Name"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/edit_text_new_email"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_email_black"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/edit_text_new_password"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_lock_black"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="16dp"
+            android:hint="Password"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/edit_text_confirm_new_password"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_lock_black"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="16dp"
+            android:hint="Confirm Password"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/edit_text_phone"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="16dp"
+            android:drawableLeft="@drawable/ic_phone_black"
+
+            android:hint="Phone Number"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+
+        <Button
+            android:id="@+id/btn_create_account"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:text="Create Account"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tv_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Already Have Account"
+
+
+            android:textColor="@color/colorPrimary" />
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
