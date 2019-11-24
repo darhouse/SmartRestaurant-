@@ -71,17 +71,6 @@ public class UserHomeActivity extends AppCompatActivity
 
             }
         });
-        /*
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            //    Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                      //  .setAction("Action", null).show();
-                sendToQRReaderActivity();
-
-            }
-        });*/
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -234,15 +223,13 @@ public class UserHomeActivity extends AppCompatActivity
 
         if (id == R.id.nav_menu) {
             // Handle the camera action
-        } else if (id == R.id.nav_orders) {
+        }else if (id == R.id.nav_orders) {
 
-        } else if (id == R.id.nav_offers) {
+        }else if (id == R.id.nav_offers) {
 
-        }
+        }else if (id == R.id.nav_share) {
 
-        else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        }else if (id == R.id.nav_send) {
 
         }
 

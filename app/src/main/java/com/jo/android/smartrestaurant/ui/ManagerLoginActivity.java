@@ -18,6 +18,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.jo.android.smartrestaurant.R;
 
+import java.util.regex.Pattern;
+
 import io.paperdb.Paper;
 
 import static com.jo.android.smartrestaurant.ui.MainActivity.USER_EMAIL;
@@ -83,7 +85,11 @@ public class ManagerLoginActivity extends AppCompatActivity {
         if(email.trim().isEmpty()){
             editTextEmail.setError("Required");
             isValid=false;
-        }else{
+        }else if (!(isValidEmail(email))){
+            editTextEmail.setError("please enter a valid Email");
+            isValid = false;
+        }
+        else{
             editTextEmail.setError(null);
         }
 
@@ -134,4 +140,12 @@ public class ManagerLoginActivity extends AppCompatActivity {
     }
 
 
+    private boolean isValidEmail(String email) {
+        return Pattern.compile("^(([\\w-]+\\.)+[\\w-]+|([a-zA-Z]{1}|[\\w-]{2,}))@"
+                + "((([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+                + "[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\."
+                + "([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+                + "[0-9]{1,2}|25[0-5]|2[0-4][0-9])){1}|"
+                + "([a-zA-Z]+[\\w-]+\\.)+[a-zA-Z]{2,4})$").matcher(email).matches();
+    }
 }
