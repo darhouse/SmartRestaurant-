@@ -1,4 +1,4 @@
-package com.jo.android.smartrestaurant;
+package com.jo.android.smartrestaurant.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,11 +17,12 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.jo.android.smartrestaurant.R;
 import com.jo.android.smartrestaurant.model.Item;
 import com.jo.android.smartrestaurant.viewholders.ItemViewHolder;
 
-import static com.jo.android.smartrestaurant.UserHomeActivity.CATEGORY_TITTLE_KEY;
-import static com.jo.android.smartrestaurant.UserHomeActivity.RESTAURANT_ID_KEY;
+import static com.jo.android.smartrestaurant.ui.UserHomeActivity.CATEGORY_TITTLE_KEY;
+import static com.jo.android.smartrestaurant.ui.UserHomeActivity.RESTAURANT_ID_KEY;
 
 public class MenuActivity extends AppCompatActivity {
    private RecyclerView recyclerViewItems;

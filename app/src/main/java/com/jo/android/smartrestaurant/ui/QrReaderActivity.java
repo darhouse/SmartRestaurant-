@@ -1,4 +1,4 @@
-package com.jo.android.smartrestaurant;
+package com.jo.android.smartrestaurant.ui;
 
 import android.Manifest;
 import android.app.Activity;
@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.zxing.Result;
+import com.jo.android.smartrestaurant.R;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;

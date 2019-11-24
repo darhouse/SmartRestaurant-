@@ -18,7 +18,32 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="action_logout">Logout</string>
-    <string name="create_an_account">Create an account</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
+    <string name="are_you_admin">Are you admin</string>
+    <string name="easy_order">Easy Order</string>
+    <string name="email">Email</string>
+    <string name="title_activity_manager_home">ManagerHomeActivity</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="password_min_6_characters">password (min. 6 characters)</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="create_account">Create an account</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="communicate">Communicate</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="best_sells">Best Sells</string>
+    <string name="manage_offers">Manage Offers</string>
+    <string name="tables">Tables</string>
+    <string name="log_out">Log Out</string>
+    <string name="resturant_name">Resturant Name</string>
+    <string name="manager_name">Manager Name</string>
+    <string name="are_you_manager">Are you manager?</string>
+    <string name="are_you_user">Are you user?</string>
+    <string name="enter_resturant_name">Enter Resturant Name</string>
+
 </resources>

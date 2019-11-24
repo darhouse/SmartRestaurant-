@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_table"
+            android:icon="@drawable/ic_table_numbers"
+            android:title="@string/tables" />
+        <item
+            android:id="@+id/nav_manage_offers"
+            android:icon="@drawable/ic_fiber_new_black_24dp"
+            android:title="@string/manage_offers" />
+        <item
+            android:id="@+id/nav_best_sells"
+            android:icon="@drawable/ic_best_sells"
+            android:title="@string/best_sells" />
+    </group>
+</menu>

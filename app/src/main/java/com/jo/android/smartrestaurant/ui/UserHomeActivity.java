@@ -1,4 +1,4 @@
-package com.jo.android.smartrestaurant;
+package com.jo.android.smartrestaurant.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,11 +18,12 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.jo.android.smartrestaurant.R;
 
 import io.paperdb.Paper;
 
-import static com.jo.android.smartrestaurant.MainActivity.USER_EMAIL;
-import static com.jo.android.smartrestaurant.MainActivity.USER_PASSWORD;
+import static com.jo.android.smartrestaurant.ui.MainActivity.USER_EMAIL;
+import static com.jo.android.smartrestaurant.ui.MainActivity.USER_PASSWORD;
 
 public class UserHomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -36,8 +37,11 @@ public class UserHomeActivity extends AppCompatActivity
     private Button buttonScan;
     private TextView textViewAscScan;
     private LinearLayout linearLayoutCategory;
-    private TextView textViewRestuarantName,textViewMeals,textViewSandwitches,textViewPizza, textViewPasta,textViewSalat,textViewDrinks,textViewrecommendation;
-
+     TextView textViewRestuarantName,
+            textViewMeals,textViewSandwitches,
+            textViewPizza, textViewPasta,
+            textViewSalat,textViewDrinks,
+            textViewrecommendation;
     private String restaurantId;
 
     @Override
@@ -78,6 +82,7 @@ public class UserHomeActivity extends AppCompatActivity
 
             }
         });*/
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -130,9 +135,9 @@ public class UserHomeActivity extends AppCompatActivity
 
     }
 
-    private void sendToMenuActivity(String menePart) {
+    private void sendToMenuActivity(String menuPart) {
         Intent intent = new Intent(UserHomeActivity.this, MenuActivity.class);
-        intent.putExtra(CATEGORY_TITTLE_KEY,menePart);
+        intent.putExtra(CATEGORY_TITTLE_KEY,menuPart);
         intent.putExtra(RESTAURANT_ID_KEY,restaurantId);
         startActivity(intent);
 
